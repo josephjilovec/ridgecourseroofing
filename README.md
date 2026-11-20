@@ -1,16 +1,16 @@
 # Ridgecourse Roofing
 
-A Phoenix & East Valley residential roofing field manual, interactive 12-point proposal scope auditor, and homeowner visit worksheet from a **Summit Hill Holdings** venture in pre-launch.
+**National B2B Roofing & Restoration Operations, Job-File Audits & Documentation Support (US · 100% Remote · Strictly Fixed-Fee).**
 
-> **Arizona Licensing Notice:** Ridgecourse Roofing is currently in pre-launch and is **Not a Licensed Contractor**. Roofing inspections for hire, written contracting bids, and construction services will not open until an active **Arizona Registrar of Contractors (AZ ROC) R-42 or CR-42** license is issued, bonded, and insured.
+> **Licensing & Scope Disclosure:** Ridgecourse Roofing is **Not a Licensed Roofing Contractor & Not a Public Adjuster**. We provide strictly B2B back-office operations, photo/evidence indexing, estimate-to-invoice reconciliation, permit/COI/lien-waiver tracking, and public NOAA/NWS storm-swath event documentation to licensed roofing contractors, water-mitigation companies, fire/contents restorers, and multi-site commercial/HOA asset teams nationwide. We do not install or inspect roofs, negotiate insurance claims, represent policyholders, waive deductibles, or charge contingency/claim-percentage fees.
 
 ## What is inside `site/`
 
-- **Phoenix Desert Roof Systems Guide:** Four high-resolution architectural studies covering Clay & Concrete Tile, Underlayment & Valley Flashing Assemblies, Architectural Asphalt Shingles, and Low-Slope / SPF Foam & Parapet Roofs.
-- **6-Layer Roof Anatomy & Monsoon Calendar:** Layer-by-layer breakdown of how Arizona residential roofs shed water and age under 150°F+ summer deck temperatures.
-- **Interactive 12-Point Proposal Scope Auditor (`Bid A` vs. `Bid B`):** Compare two written contractor estimates side-by-side locally in your browser to highlight missing scope lines, undisclosed wood decking charges, or missing permit/lien-waiver terms.
-- **Homeowner Visit Notes Worksheet:** Local-only checklist that exports a clean `.txt` file or print-ready dossier (no account, no server submission, no browser storage, zero tracking).
-- **Pre-Launch Readiness & Partner Track:** Transparent milestone status covering brand clearance, operating standards, AZ ROC licensing gates, and Qualifying Party / trade supplier inquiries.
+- **Four B2B Back-Office Capabilities:** Roofing Job-File & Supplement-Prep Audits, Water-Mitigation & Psychrometric Log QA, Permit/COI/Lien-Waiver & Closeout File Coordination, and Public NOAA/NWS Storm-Swath Event Intelligence.
+- **6-Stage Post-Sale Back-Office Workflow & Fixed-Fee Engagement Tiers:** Transparent fixed per-file, per-batch, and monthly operational capacity structures (zero % of claim proceeds).
+- **Interactive 12-Point Job-File & Scope Completeness Auditor (`File A` vs. `File B`):** Browser-local QA tool helping contractors check documentation, bare-deck/flashing photos, supplier invoices, moisture logs, permits, and lien waivers prior to final invoicing or closeout.
+- **Interactive B2B Job-File Intake & Exception Prep Sheet:** Local-only checklist exporting a plain-text `.txt` or print-ready dossier (zero account, zero server submission, zero tracking).
+- **Clear Legal & Operating Boundaries:** Explicit side-by-side breakdown of B2B technical assistance versus prohibited contracting or public adjusting activities.
 
 ## Run locally
 
@@ -18,11 +18,11 @@ A Phoenix & East Valley residential roofing field manual, interactive 12-point p
 python3 -m http.server 8000 --directory site
 ```
 
-Open **http://localhost:8000**. Pure HTML, CSS, and vanilla JavaScript — zero external CDNs, zero build step, zero third-party analytics.
+Open **http://localhost:8000**. Pure HTML, CSS, and vanilla JavaScript — zero external CDNs, zero build step, zero third-party trackers.
 
-## Publish & sync with Summit Hill Holdings
+## Publish & sync
 
-`site/` is the complete deployable static directory. It deploys directly on Vercel at [ridgecourseroofing.summithillholdings.com](https://ridgecourseroofing.summithillholdings.com) (and `https://ridgecourseroofing.vercel.app/`, with `rootDirectory: "site"`). The Summit Hill Holdings website also mounts a pinned snapshot at [summithillholdings.com/roofing](https://summithillholdings.com/roofing) and lists the venture at [summithillholdings.com/portfolio/ridgecourse-roofing](https://summithillholdings.com/portfolio/ridgecourse-roofing).
+`site/` is the complete deployable static directory. It deploys directly on Vercel at [ridgecourseroofing.summithillholdings.com](https://ridgecourseroofing.summithillholdings.com) (with `rootDirectory: "site"`). The Summit Hill Holdings website also mounts a pinned snapshot at [summithillholdings.com/roofing](https://summithillholdings.com/roofing) and lists the venture at [summithillholdings.com/portfolio/ridgecourse-roofing](https://summithillholdings.com/portfolio/ridgecourse-roofing).
 
 To refresh the mounted copy from a `summithillholdings` checkout after committing changes here:
 
@@ -30,6 +30,6 @@ To refresh the mounted copy from a `summithillholdings` checkout after committin
 node scripts/sync-ridgecourse.mjs /path/to/ridgecourseroofing FULL_40_CHAR_COMMIT_SHA
 ```
 
-## Imagery & brand notice
+## Imagery notice
 
-All roof photographs and architectural visuals in `site/assets/` are original AI-generated illustrative visuals depicting Phoenix/Sonoran Desert roofing assemblies and materials. **No completed customer projects are pictured.** Responsive WebP/JPEG assets and the self-hosted Barlow Condensed display font (OFL notice included under `site/assets/`) keep page loads independent of third-party hosts.
+All architectural roof and workflow visuals in `site/assets/` are original AI-generated illustrative visuals. **No completed customer jobs or client files are pictured.**
