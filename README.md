@@ -22,7 +22,7 @@ Open **http://localhost:8000**. Pure HTML, CSS, and vanilla JavaScript — zero 
 
 ## Publish & sync with Summit Hill Holdings
 
-`site/` is the complete deployable static directory. The Summit Hill Holdings website mounts a pinned snapshot at [summithillholdings.com/roofing](https://summithillholdings.com/roofing) and lists the venture at [summithillholdings.com/portfolio/ridgecourse-roofing](https://summithillholdings.com/portfolio/ridgecourse-roofing).
+`site/` is the complete deployable static directory. It deploys directly on Vercel at [ridgecourseroofing.summithillholdings.com](https://ridgecourseroofing.summithillholdings.com) (and `https://ridgecourseroofing.vercel.app/`, with `rootDirectory: "site"`). The Summit Hill Holdings website also mounts a pinned snapshot at [summithillholdings.com/roofing](https://summithillholdings.com/roofing) and lists the venture at [summithillholdings.com/portfolio/ridgecourse-roofing](https://summithillholdings.com/portfolio/ridgecourse-roofing).
 
 To refresh the mounted copy from a `summithillholdings` checkout after committing changes here:
 
