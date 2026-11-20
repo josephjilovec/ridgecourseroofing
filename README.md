@@ -1,19 +1,35 @@
-# True Peak Roofing
+# Ridgecourse Roofing
 
-A Phoenix homeowner’s field guide from a Summit Hill Holdings venture in development. The public site explains roof materials, helps readers compare proposals and produces a printable or downloadable worksheet. It currently accepts general questions through the studio.
+A Phoenix & East Valley residential roofing field manual, interactive 12-point proposal scope auditor, and homeowner visit worksheet from a **Summit Hill Holdings** venture in pre-launch.
 
-## Run it locally
+> **Arizona Licensing Notice:** Ridgecourse Roofing is currently in pre-launch and is **Not a Licensed Contractor**. Roofing inspections for hire, written contracting bids, and construction services will not open until an active **Arizona Registrar of Contractors (AZ ROC) R-42 or CR-42** license is issued, bonded, and insured.
 
-From this repository on Windows, run the following command and open **http://localhost:8000**.
+## What is inside `site/`
 
-```powershell
-python -m http.server 8000 --directory site
+- **Phoenix Desert Roof Systems Guide:** Four high-resolution architectural studies covering Clay & Concrete Tile, Underlayment & Valley Flashing Assemblies, Architectural Asphalt Shingles, and Low-Slope / SPF Foam & Parapet Roofs.
+- **6-Layer Roof Anatomy & Monsoon Calendar:** Layer-by-layer breakdown of how Arizona residential roofs shed water and age under 150°F+ summer deck temperatures.
+- **Interactive 12-Point Proposal Scope Auditor (`Bid A` vs. `Bid B`):** Compare two written contractor estimates side-by-side locally in your browser to highlight missing scope lines, undisclosed wood decking charges, or missing permit/lien-waiver terms.
+- **Homeowner Visit Notes Worksheet:** Local-only checklist that exports a clean `.txt` file or print-ready dossier (no account, no server submission, no browser storage, zero tracking).
+- **Pre-Launch Readiness & Partner Track:** Transparent milestone status covering brand clearance, operating standards, AZ ROC licensing gates, and Qualifying Party / trade supplier inquiries.
+
+## Run locally
+
+```sh
+python3 -m http.server 8000 --directory site
 ```
 
-On macOS or Linux, use `python3` if that is the installed command. The site is plain HTML, CSS and JavaScript. No account, package installation or backend is required. The material and estimate sections work with JavaScript disabled. The worksheet stays in the browser tab. The plain-text checklist also works offline once downloaded.
+Open **http://localhost:8000**. Pure HTML, CSS, and vanilla JavaScript — zero external CDNs, zero build step, zero third-party analytics.
 
-## Publish and maintain
+## Publish & sync with Summit Hill Holdings
 
-`site/` is the complete deployable directory. The Summit Hill Holdings website serves a pinned copy at [the roof guide](https://summithillholdings.com/roofing). Its portfolio entry is [True Peak Roofing](https://summithillholdings.com/portfolio/true-peak-roofing). To update that copy, follow the roofing sync command in the Summit Hill Holdings README. The same site directory can be served directly by a static web host.
+`site/` is the complete deployable static directory. The Summit Hill Holdings website mounts a pinned snapshot at [summithillholdings.com/roofing](https://summithillholdings.com/roofing) and lists the venture at [summithillholdings.com/portfolio/ridgecourse-roofing](https://summithillholdings.com/portfolio/ridgecourse-roofing).
 
-Keep service availability and license language consistent across the homepage, terms and portfolio. The images are original AI-generated illustrations of a desert roofscape and three roofing materials. No customer projects are pictured. Responsive WebP files and the locally served Barlow Condensed typeface keep page loads independent of third-party media hosts. Its OFL notice is included under `site/assets/`.
+To refresh the mounted copy from a `summithillholdings` checkout after committing changes here:
+
+```sh
+node scripts/sync-ridgecourse.mjs /path/to/ridgecourseroofing FULL_40_CHAR_COMMIT_SHA
+```
+
+## Imagery & brand notice
+
+All roof photographs and architectural visuals in `site/assets/` are original AI-generated illustrative visuals depicting Phoenix/Sonoran Desert roofing assemblies and materials. **No completed customer projects are pictured.** Responsive WebP/JPEG assets and the self-hosted Barlow Condensed display font (OFL notice included under `site/assets/`) keep page loads independent of third-party hosts.
